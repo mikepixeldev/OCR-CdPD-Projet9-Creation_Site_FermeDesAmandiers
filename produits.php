@@ -49,7 +49,12 @@ $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
-<?php include 'partials/header.php'; ?>
+<!-- Inclusion du header -->
+<?php
+$title = "Nos produits de saison – Ferme des Amandiers";
+$metaDescription = "Consultez les paniers disponibles selon la saison et les jours de retrait (mercredi et samedi).";
+include 'partials/header.php';
+?>
 
 <main>
     <!-- Titre principal -->
@@ -71,11 +76,11 @@ $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- Chaque produit est affiché dans une <div> avec un attribut data-jour -->
         <?php foreach ($produits as $produit): ?>
             <?php
-                // On prépare les classes pour le filtrage JS (ex : "mercredi samedi")
-                $joursClasses = strtolower(str_replace(', ', ' ', $produit['jours']));
+            // On prépare les classes pour le filtrage JS (ex : "mercredi samedi")
+            $joursClasses = strtolower(str_replace(', ', ' ', $produit['jours']));
 
-                // On affiche chaque produit avec ses informations : nom, description, image, saison et jours de disponibilité 
-                // Il faudra ensuite filtrer les produits en fonction des saisons, pour n'afficher que ceux de la saison actuelle
+            // On affiche chaque produit avec ses informations : nom, description, image, saison et jours de disponibilité 
+            // Il faudra ensuite filtrer les produits en fonction des saisons, pour n'afficher que ceux de la saison actuelle
             ?>
             <div class="produit" data-jour="<?= $joursClasses ?>">
                 <img src="<?= $produit['image_url'] ?>" alt="<?= htmlspecialchars($produit['nom']) ?>">
