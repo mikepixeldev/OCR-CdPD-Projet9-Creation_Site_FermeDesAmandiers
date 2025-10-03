@@ -1,0 +1,89 @@
+/* ------------------ */
+/* RESET CSS MINIMAL  */
+/* ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F3E7;
+    color: #333333;
+}
+
+/* ------------------ */
+/* GLOBAL STYLES      */
+/* ------------------ */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: #6C8C55;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ------------------ */
+/* LAYOUT SECTIONS    */
+/* ------------------ */
+
+header, footer, section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ------------------ */
+/* UTILITY CLASSES    */
+/* ------------------ */
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f0f0f0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #6C8C55;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5A7548;
+}
+
+.bg-accent {
+    background-color: #6C8C55;
+    color: white;
+}
+
+/* ------------------ */
+/* PLACEHOLDER ZONES  */
+/* ------------------ */
+/* Ajoutez ici vos classes personnalisées pour hero, cards, etc. */
