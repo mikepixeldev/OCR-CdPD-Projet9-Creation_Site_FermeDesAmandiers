@@ -1,5 +1,3 @@
-
-
 <!-- Inclusion du header (fichier séparé) -->
 <?php include('partials/header.php'); ?>
 <!-- Le fichier header.php contiendra le logo, le menu de navigation, etc. -->
