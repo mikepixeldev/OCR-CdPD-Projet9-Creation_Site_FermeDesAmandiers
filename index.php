@@ -1,5 +1,10 @@
 <!-- Inclusion du header (fichier séparé) -->
-<?php include('partials/header.php'); ?>
+<?php
+$title = "Ferme des Amandiers • Accueil";
+$metaDescription = "Découvrez la Ferme des Amandiers : légumes de saison en vente directe, chaque mercredi et samedi.";
+$preloadImage = "assets/img/hero-header.jpg";
+include('partials/header.php');
+?>
 <!-- Le fichier header.php contiendra le logo, le menu de navigation, etc. -->
 
 <!-- Variables spécifiques à cette page -->
