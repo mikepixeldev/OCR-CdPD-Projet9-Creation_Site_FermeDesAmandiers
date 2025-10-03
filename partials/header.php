@@ -27,32 +27,36 @@
     <meta property="og:image" content="<?= htmlspecialchars($absOgImage) ?>" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Fonts -->
+    <!-- Preconnect pour Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts : Playfair Display + Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
 
-    <!-- Preload image principale sur la home -->
+    <!-- Preload image principale -->
     <?php if (!empty($preloadImage)): ?>
         <link rel="preload" as="image" href="<?= htmlspecialchars($preloadImage) ?>">
     <?php endif; ?>
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <!-- Logo ou nom du site -->
+
+        <!-- Logo / Titre du site -->
         <div class="site-title">
             <h1>Ferme des Amandiers</h1>
         </div>
 
-        <!-- Menu de navigation -->
+        <!-- Navigation principale -->
         <nav>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="produits.php">Produits</a></li>
             </ul>
         </nav>
+
     </header>

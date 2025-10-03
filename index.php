@@ -1,20 +1,17 @@
-<!-- Inclusion du header -->
 <?php
+// Variables spécifiques à cette page (SEO + performance)
 $title = "Ferme des Amandiers • Accueil";
 $metaDescription = "Découvrez la Ferme des Amandiers : légumes de saison en vente directe, chaque mercredi et samedi.";
 $preloadImage = "assets/img/hero-header.jpg";
-include('partials/header.php');
-?>
 
-<!-- Variables spécifiques à cette page -->
-<?php
-$preloadImage = 'assets/img/hero-header.jpg';
+// Inclusion du header
+include('partials/header.php');
 ?>
 
 <main>
     <!-- Section Hero / Accroche principale -->
     <section id="hero">
-        <div>
+        <div class="container">
             <h1>Des légumes frais, locaux et de saison</h1>
             <p>Vente directe à la ferme chaque mercredi et samedi</p>
         </div>
@@ -26,7 +23,7 @@ $preloadImage = 'assets/img/hero-header.jpg';
             <div>
                 <h2>Bienvenue à la Ferme des Amandiers</h2>
                 <p>Installée depuis 2015, Sandrine cultive avec passion une grande variété de légumes de saison en agriculture raisonnée. Chaque semaine, elle propose ses récoltes fraîches à la vente directe, en drive à la ferme, chaque mercredi et samedi.</p>
-                <p>Le site vous permet désormais de consulter les paniers disponibles avant de vous déplacer, et de découvrir l’univers de la ferme : ses méthodes de culture, ses valeurs, et les engagements de Sandrine pour une alimentation plus saine et locale.</p>
+                <p>Le site vous permet désormais de consulter les paniers disponibles avant de vous déplacer, et de découvrir l'univers de la ferme : ses méthodes de culture, ses valeurs, et les engagements de Sandrine pour une alimentation plus saine et locale.</p>
             </div>
             <figure>
                 <img src="assets/img/la-ferme.jpg" alt="La Ferme des Amandiers" class="img-fluid img-shadow img-rounded">
@@ -39,11 +36,11 @@ $preloadImage = 'assets/img/hero-header.jpg';
         <div class="container grid-2">
             <figure>
                 <img src="assets/img/sandrine.jpg" alt="Sandrine, maraîchère" class="img-fluid img-shadow img-rounded">
-                <figcaption class="sr-only">Portrait de Sandrine</figcaption>
+                <figcaption class="sr-only">Portrait de Sandrine, maraîchère de la Ferme des Amandiers</figcaption>
             </figure>
             <div>
                 <h2>À propos de Sandrine</h2>
-                <p>Sandrine est une maraîchère passionnée par la terre et les relations humaines. Engagée pour une agriculture raisonnée, elle met un point d’honneur à cultiver des légumes de qualité tout en respectant les rythmes de la nature.</p>
+                <p>Sandrine est une maraîchère passionnée par la terre et les relations humaines. Engagée pour une agriculture raisonnée, elle met un point d'honneur à cultiver des légumes de qualité tout en respectant les rythmes de la nature.</p>
                 <p>Proche de sa clientèle, elle aime échanger, conseiller et partager des recettes autour des produits de saison. Sa ferme est un lieu de vie, de rencontre, et de gourmandise.</p>
             </div>
         </div>
@@ -53,22 +50,22 @@ $preloadImage = 'assets/img/hero-header.jpg';
     <section id="valeurs">
         <div class="container">
             <h2 class="center">Nos valeurs</h2>
-            <div class="grid-4 cards mt">
+            <div class="grid-4 cards">
                 <article class="value-card">
                     <h3>Saisonnalité</h3>
                     <p>Nous ne vendons que des produits cultivés à maturité, respectant les saisons.</p>
                 </article>
                 <article class="value-card">
                     <h3>Transparence</h3>
-                    <p>Vous savez d’où viennent vos produits et comment ils sont cultivés.</p>
+                    <p>Vous savez d'où viennent vos produits et comment ils sont cultivés.</p>
                 </article>
                 <article class="value-card">
                     <h3>Circuit court</h3>
-                    <p>Pas d’intermédiaires : directement du champ à votre panier.</p>
+                    <p>Pas d'intermédiaires : directement du champ à votre panier.</p>
                 </article>
                 <article class="value-card">
                     <h3>Engagement local</h3>
-                    <p>Nous participons activement à la vie du territoire et soutenons l’agriculture locale.</p>
+                    <p>Nous participons activement à la vie du territoire et soutenons l'agriculture locale.</p>
                 </article>
             </div>
         </div>
@@ -78,7 +75,7 @@ $preloadImage = 'assets/img/hero-header.jpg';
     <section id="fonctionnement">
         <div class="container">
             <h2 class="center">Comment ça marche&nbsp;?</h2>
-            <div class="grid-3 cards mt">
+            <div class="grid-3 cards">
                 <article class="card">
                     <h3>1. Consultez les paniers</h3>
                     <p>Chaque mardi et vendredi, les paniers disponibles sont mis à jour sur le site.</p>
@@ -100,5 +97,7 @@ $preloadImage = 'assets/img/hero-header.jpg';
 
 </main>
 
-<!-- Inclusion du footer -->
-<?php include 'partials/footer.php'; ?>
+<?php
+// Inclusion du footer
+include('partials/footer.php');
+?>
