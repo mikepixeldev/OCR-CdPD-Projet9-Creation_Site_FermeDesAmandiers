@@ -2,6 +2,11 @@
 <?php include('partials/header.php'); ?>
 <!-- Le fichier header.php contiendra le logo, le menu de navigation, etc. -->
 
+<!-- Variables spécifiques à cette page -->
+<?php
+$preloadImage = 'assets/img/hero-header.jpg';
+?>
+
 <!-- Section Hero / Accroche principale -->
 <section id="hero">
     <!-- Exemple : une image de la ferme et un slogan -->
