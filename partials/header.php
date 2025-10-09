@@ -53,10 +53,8 @@
 
         <!-- Navigation principale -->
         <nav>
-            <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="produits.php">Produits</a></li>
-            </ul>
+            <a href="index.php">Accueil</a>
+            <a href="produits.php">Produits</a>
         </nav>
 
     </header>
