@@ -20,6 +20,10 @@ body {
     background-color: #F5F3E7;
     color: #333333;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* ------------------ */
@@ -29,6 +33,11 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6C8C55;
 }
 
 h1,
@@ -78,7 +87,6 @@ footer,
 section {
     padding: 3.2rem 0;
     max-width: 120rem;
-
     margin: auto;
 }
 
@@ -107,12 +115,14 @@ main {
     border: none;
     border-radius: 0.4rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .btn:hover {
     background-color: #5A7548;
+    transform: translateY(-2px);
 }
 
 .bg-accent {
@@ -125,6 +135,10 @@ main {
 /* ------------------ */
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
 }
@@ -134,12 +148,24 @@ header h1 {
 
 }
 
+#main-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #main-nav {
+        display: block;
+        margin-top: 1.6rem;
+    }
+}
+
 /* ------------------ */
 /* MAIN               */
 /* ------------------ */
 
-
-
+main {
+    flex: 1;
+}
 
 /* ------------------ */
 /* FOOTER             */

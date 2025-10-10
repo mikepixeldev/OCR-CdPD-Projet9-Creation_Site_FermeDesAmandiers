@@ -27,9 +27,6 @@
     <meta property="og:image" content="<?= htmlspecialchars($absOgImage) ?>" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Normalize.css pour corriger les bugs navigateurs -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
     <!-- Preconnect pour Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +54,7 @@
         </div>
 
         <!-- Navigation principale -->
-        <nav>
+        <nav id="main-nav">
             <a href="index.php">Accueil</a>
             <a href="produits.php">Produits</a>
         </nav>
