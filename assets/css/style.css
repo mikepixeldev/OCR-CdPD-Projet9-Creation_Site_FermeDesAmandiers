@@ -7,12 +7,19 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
+    /* Base 10 pour les rem : 62.5% de 16px = 10px */
+    font-size: 62.5%;
     height: 100%;
+}
+
+body {
+    /* Texte par défaut à 16px */
+    font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
     background-color: #F5F3E7;
     color: #333333;
+    line-height: 1.6;
 }
 
 /* ------------------ */
@@ -27,14 +34,26 @@ a {
 h1,
 h2,
 h3 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     color: #6C8C55;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     line-height: 1.6;
 }
 
@@ -44,6 +63,12 @@ img {
     display: block;
 }
 
+ol,
+ul,
+li {
+    list-style: none;
+}
+
 /* ------------------ */
 /* LAYOUT SECTIONS    */
 /* ------------------ */
@@ -51,9 +76,15 @@ img {
 header,
 footer,
 section {
-    padding: 2rem 1rem;
-    max-width: 1200px;
+    padding: 3.2rem 0;
+    max-width: 120rem;
+
     margin: auto;
+}
+
+header,
+main {
+    padding: 0 1.6rem;
 }
 
 /* ------------------ */
@@ -70,13 +101,14 @@ section {
 
 .btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 1.2rem 2.4rem;
     background-color: #6C8C55;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -89,6 +121,37 @@ section {
 }
 
 /* ------------------ */
-/* PLACEHOLDER ZONES  */
+/* HEADER             */
 /* ------------------ */
-/* Ajoutez ici vos classes personnalisées pour hero, cards, etc. */
+
+header {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+header h1 {
+    font-size: 2rem;
+
+}
+
+/* ------------------ */
+/* MAIN               */
+/* ------------------ */
+
+
+
+
+/* ------------------ */
+/* FOOTER             */
+/* ------------------ */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 1.6rem;
+    background-color: #6C8C55;
+    color: #F5F3E7;
+}

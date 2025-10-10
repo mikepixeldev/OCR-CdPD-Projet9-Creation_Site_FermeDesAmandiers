@@ -7,6 +7,7 @@
           <p>Chemin de la Plaine, 13220 Châteauneuf-les-Martigues</p>
           <p>Téléphone : <a href="tel:+33612345678">06 12 34 56 78</a></p>
           <p>E-mail : <a href="mailto:sandrine@fermedesamandiers.fr">sandrine@fermedesamandiers.fr</a></p>
+          <p class="text-sm">SIRET : 123 456 789 00012</p>
       </div>
 
       <!-- Liens légaux -->
