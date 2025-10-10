@@ -11,10 +11,9 @@ include('partials/header.php');
 <main>
     <!-- Section Hero / Accroche principale -->
     <section id="hero">
-        <div class="container">
-            <h1>Des légumes frais, locaux et de saison</h1>
-            <p>Vente directe à la ferme chaque mercredi et samedi</p>
-        </div>
+
+        <h1>Des légumes frais, locaux et de saison</h1>
+        <p>Vente directe à la ferme chaque mercredi et samedi</p>
     </section>
 
     <!-- Section Présentation de la ferme -->
@@ -73,7 +72,7 @@ include('partials/header.php');
 
     <!-- Section Comment ça marche -->
     <section id="fonctionnement">
-        <div class="container">
+        <div>
             <h2>Comment ça marche&nbsp;?</h2>
             <ol class="process-grid">
                 <li class="card">
