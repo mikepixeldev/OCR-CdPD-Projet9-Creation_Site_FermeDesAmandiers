@@ -1,4 +1,6 @@
 <?php
+// index.php
+
 // Variables spécifiques à cette page (SEO + performance)
 $title = "Ferme des Amandiers • Accueil";
 $metaDescription = "Découvrez la Ferme des Amandiers : légumes de saison en vente directe, chaque mercredi et samedi.";

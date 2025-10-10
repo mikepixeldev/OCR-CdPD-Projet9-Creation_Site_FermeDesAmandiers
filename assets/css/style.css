@@ -113,7 +113,6 @@ header,
 footer,
 section {
     padding: 3.2rem 0;
-    max-width: 120rem;
     margin: auto;
 }
 
@@ -193,6 +192,58 @@ header .site-title h1 {
 #main-nav a {
     display: inline-block;
     padding: .4rem .8rem;
+}
+
+
+/* ------------------ */
+/* HERO             */
+/* ------------------ */
+
+#hero {
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 6.4rem 1.6rem;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/hero-header.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+#hero p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0;
+    max-width: 80rem;
+}
+
+/* Responsive desktop */
+@media (min-width: 768px) {
+    #hero {
+        min-height: 50rem;
+        padding: 8rem 2rem;
+    }
+
+    #hero h1 {
+        font-size: 4.8rem;
+    }
+
+    #hero p {
+        font-size: 2rem;
+    }
 }
 
 /* ------------------ */
