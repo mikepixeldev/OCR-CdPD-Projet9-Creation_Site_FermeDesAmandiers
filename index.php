@@ -20,30 +20,27 @@ include('partials/header.php');
 
     <!-- Section Présentation de la ferme -->
     <section id="presentation">
-        <div class="container grid-2">
-            <div>
-                <h2>Bienvenue à la Ferme des Amandiers</h2>
-                <p>Installée depuis 2015, Sandrine cultive avec passion une grande variété de légumes de saison en agriculture raisonnée. Chaque semaine, elle propose ses récoltes fraîches à la vente directe, en drive à la ferme, chaque mercredi et samedi.</p>
-                <p>Le site vous permet désormais de consulter les paniers disponibles avant de vous déplacer, et de découvrir l'univers de la ferme : ses méthodes de culture, ses valeurs, et les engagements de Sandrine pour une alimentation plus saine et locale.</p>
-            </div>
-            <figure>
-                <img src="assets/img/la-ferme.jpg" alt="La Ferme des Amandiers" class="img-fluid img-shadow img-rounded">
-            </figure>
+        <div>
+            <h2>Bienvenue à la Ferme des Amandiers</h2>
+            <p>Installée depuis 2015, Sandrine cultive avec passion une grande variété de légumes de saison en agriculture raisonnée. Chaque semaine, elle propose ses récoltes fraîches à la vente directe, en drive à la ferme, chaque mercredi et samedi.</p>
+            <p>Le site vous permet désormais de consulter les paniers disponibles avant de vous déplacer, et de découvrir l'univers de la ferme : ses méthodes de culture, ses valeurs, et les engagements de Sandrine pour une alimentation plus saine et locale.</p>
         </div>
+        <figure>
+            <img src="assets/img/la-ferme.jpg" alt="La Ferme des Amandiers" class="img-fluid img-shadow img-rounded">
+        </figure>
+
     </section>
 
     <!-- Section À propos de Sandrine -->
     <section id="a-propos">
-        <div class="container grid-2">
-            <figure>
-                <img src="assets/img/sandrine.jpg" alt="Sandrine, maraîchère" class="img-fluid img-shadow img-rounded">
-                <figcaption class="sr-only">Portrait de Sandrine, maraîchère de la Ferme des Amandiers</figcaption>
-            </figure>
-            <div>
-                <h2>À propos de Sandrine</h2>
-                <p>Sandrine est une maraîchère passionnée par la terre et les relations humaines. Engagée pour une agriculture raisonnée, elle met un point d'honneur à cultiver des légumes de qualité tout en respectant les rythmes de la nature.</p>
-                <p>Proche de sa clientèle, elle aime échanger, conseiller et partager des recettes autour des produits de saison. Sa ferme est un lieu de vie, de rencontre, et de gourmandise.</p>
-            </div>
+        <figure>
+            <img src="assets/img/sandrine.jpg" alt="Sandrine, maraîchère" class="img-fluid img-shadow img-rounded">
+            <figcaption class="sr-only">Portrait de Sandrine, maraîchère de la Ferme des Amandiers</figcaption>
+        </figure>
+        <div>
+            <h2>À propos de Sandrine</h2>
+            <p>Sandrine est une maraîchère passionnée par la terre et les relations humaines. Engagée pour une agriculture raisonnée, elle met un point d'honneur à cultiver des légumes de qualité tout en respectant les rythmes de la nature.</p>
+            <p>Proche de sa clientèle, elle aime échanger, conseiller et partager des recettes autour des produits de saison. Sa ferme est un lieu de vie, de rencontre, et de gourmandise.</p>
         </div>
     </section>
 

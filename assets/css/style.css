@@ -103,6 +103,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 0.8rem;
 }
 
 /* ------------------ */
@@ -122,6 +123,10 @@ main {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.4rem;
     flex: 1;
 }
 
@@ -244,6 +249,48 @@ header .site-title h1 {
     #hero p {
         font-size: 2rem;
     }
+}
+
+
+/* ------------------ */
+/* PRESENTATION       */
+/* ------------------ */
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* ------------------ */
+/* À PROPOS           */
+/* ------------------ */
+
+#a-propos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: #F8F9F4;
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding-top: 6.4rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /* ------------------ */
