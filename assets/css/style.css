@@ -315,7 +315,7 @@ header .site-title h1 {
     font-size: 1.4rem;
     text-align: center;
     border-radius: 0.8rem;
-    background-color: #F8F9F4;
+    background-color: white;
     padding: 2.4rem;
     box-shadow:
         0 .6rem 1.6rem rgba(0, 0, 0, .08),
@@ -324,14 +324,48 @@ header .site-title h1 {
     /* contact shadow */
 }
 
-/* Ombre de texte douce (1px/2px) */
-.text-shadow-soft {
-    text-shadow: 0 .1rem .2rem rgba(0, 0, 0, .12);
+.value-card p {
+    margin: 0;
 }
 
-/* Application directe : titres des valeurs */
-.value-card h3 {
-    text-shadow: 0 .1rem .2rem rgba(0, 0, 0, .10);
+/* ------------------ */
+/* FONCTIONNEMENT     */
+/* ------------------ */
+
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: #F8F9F4;
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 6.4rem 1.6rem;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+}
+
+.process-card {
+    background-color: white;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+    box-shadow:
+        0 .6rem 1.6rem rgba(0, 0, 0, .08),
+        /* soft spread */
+        0 .2rem .4rem rgba(0, 0, 0, .04);
+    /* contact shadow */
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.process-card p {
+    margin: 0;
 }
 
 /* ------------------ */

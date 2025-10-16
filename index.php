@@ -69,26 +69,24 @@ include('partials/header.php');
 
     <!-- Section Comment ça marche -->
     <section id="fonctionnement">
-        <div>
-            <h2>Comment ça marche&nbsp;?</h2>
-            <ol class="process-grid">
-                <li class="card">
-                    <h3>1. Consultez les paniers</h3>
-                    <p>Chaque mardi et vendredi, les paniers disponibles sont mis à jour sur le site.</p>
-                </li>
-                <li class="card">
-                    <h3>2. Venez au drive</h3>
-                    <p>Rendez-vous à la ferme le mercredi ou le samedi pour récupérer vos produits.</p>
-                </li>
-                <li class="card">
-                    <h3>3. Profitez des saveurs locales</h3>
-                    <p>Savourez des légumes cultivés avec soin, à deux pas de chez vous.</p>
-                </li>
-            </ol>
-            <p>
-                <a class="btn" href="produits.php">Voir les produits</a>
-            </p>
-        </div>
+        <h2>Comment ça marche&nbsp;?</h2>
+        <ol class="process-grid">
+            <li class="process-card">
+                <h3>1. Consultez les paniers</h3>
+                <p>Chaque mardi et vendredi, les paniers disponibles sont mis à jour sur le site.</p>
+            </li>
+            <li class="process-card">
+                <h3>2. Venez au drive</h3>
+                <p>Rendez-vous à la ferme le mercredi ou le samedi pour récupérer vos produits.</p>
+            </li>
+            <li class="process-card">
+                <h3>3. Profitez des saveurs locales</h3>
+                <p>Savourez des légumes cultivés avec soin, à deux pas de chez vous.</p>
+            </li>
+        </ol>
+        <p>
+            <a class="btn" href="produits.php">Voir les produits</a>
+        </p>
     </section>
 
 </main>
