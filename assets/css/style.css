@@ -67,23 +67,35 @@ body {
 
 h1,
 h2,
-h3 {
-    margin-bottom: 0.8rem;
+h3,
+h4 {
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
     color: #6C8C55;
+    margin-bottom: 0.8rem;
 }
 
 h1 {
     font-size: 3rem;
+    line-height: 3.6rem;
 }
 
 h2 {
     font-size: 2.4rem;
+    line-height: 3.2rem;
 }
 
 h3 {
     font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
 }
 
 p {
@@ -378,6 +390,24 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 4rem 1.6rem;
+    width: 100%;
     background-color: #6C8C55;
     color: #F5F3E7;
+    gap: 3.2rem;
+}
+
+footer p,
+footer a {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.infos-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.infos-contact {
+    margin-top: 0.8rem;
 }

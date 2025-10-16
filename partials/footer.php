@@ -3,15 +3,17 @@
 
       <!-- Coordonnées de la ferme -->
       <div class="footer-contact">
-          <p><strong>Ferme des Amandiers</strong></p>
-          <p>Chemin de la Plaine, 13220 Châteauneuf-les-Martigues</p>
-          <p>Téléphone : <a href="tel:+33612345678">06 12 34 56 78</a></p>
-          <p>E-mail : <a href="mailto:sandrine@fermedesamandiers.fr">sandrine@fermedesamandiers.fr</a></p>
-          <p class="text-sm">SIRET : 123 456 789 00012</p>
+          <h4>Ferme des Amandiers</h4>
+          <div class="infos-footer infos-contact">
+              <p>Chemin de la Plaine, 13220 Châteauneuf-les-Martigues</p>
+              <p>Téléphone : <a href="tel:+33612345678">06 12 34 56 78</a></p>
+              <p>E-mail : <a href="mailto:sandrine@fermedesamandiers.fr">sandrine@fermedesamandiers.fr</a></p>
+              <p class="text-sm">SIRET : 123 456 789 00012</p>
+          </div>
       </div>
 
       <!-- Liens légaux -->
-      <nav>
+      <nav class="infos-footer">
           <a href="#mentions-legales">Mentions légales</a>
           <a href="#politique-confidentialite">Politique de confidentialité</a>
           <a href="#cgv">Conditions générales de vente</a>
