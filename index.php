@@ -46,27 +46,25 @@ include('partials/header.php');
 
     <!-- Section Nos valeurs -->
     <section id="valeurs">
-        <div class="container">
-            <h2>Nos valeurs</h2>
-            <ul class="values-grid">
-                <li class="value-card">
-                    <h3>Saisonnalité</h3>
-                    <p>Nous ne vendons que des produits cultivés à maturité, respectant les saisons.</p>
-                </li>
-                <li class="value-card">
-                    <h3>Transparence</h3>
-                    <p>Vous savez d’où viennent vos produits et comment ils sont cultivés.</p>
-                </li>
-                <li class="value-card">
-                    <h3>Circuit court</h3>
-                    <p>Pas d’intermédiaires : directement du champ à votre panier.</p>
-                </li>
-                <li class="value-card">
-                    <h3>Engagement local</h3>
-                    <p>Nous participons activement à la vie du territoire et soutenons l’agriculture locale.</p>
-                </li>
-            </ul>
-        </div>
+        <h2>Nos valeurs</h2>
+        <ul class="values-grid">
+            <li class="value-card">
+                <h3>Saisonnalité</h3>
+                <p>Nous ne vendons que des produits cultivés à maturité, respectant les saisons.</p>
+            </li>
+            <li class="value-card">
+                <h3>Transparence</h3>
+                <p>Vous savez d’où viennent vos produits et comment ils sont cultivés.</p>
+            </li>
+            <li class="value-card">
+                <h3>Circuit court</h3>
+                <p>Pas d’intermédiaires : directement du champ à votre panier.</p>
+            </li>
+            <li class="value-card">
+                <h3>Engagement local</h3>
+                <p>Nous participons activement à la vie du territoire et soutenons l’agriculture locale.</p>
+            </li>
+        </ul>
     </section>
 
     <!-- Section Comment ça marche -->

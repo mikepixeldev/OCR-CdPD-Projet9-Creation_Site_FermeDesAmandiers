@@ -294,6 +294,47 @@ header .site-title h1 {
 }
 
 /* ------------------ */
+/* VALEURS            */
+/* ------------------ */
+
+#valeurs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+}
+
+.value-card {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    background-color: #F8F9F4;
+    padding: 2.4rem;
+    box-shadow:
+        0 .6rem 1.6rem rgba(0, 0, 0, .08),
+        /* soft spread */
+        0 .2rem .4rem rgba(0, 0, 0, .04);
+    /* contact shadow */
+}
+
+/* Ombre de texte douce (1px/2px) */
+.text-shadow-soft {
+    text-shadow: 0 .1rem .2rem rgba(0, 0, 0, .12);
+}
+
+/* Application directe : titres des valeurs */
+.value-card h3 {
+    text-shadow: 0 .1rem .2rem rgba(0, 0, 0, .10);
+}
+
+/* ------------------ */
 /* FOOTER             */
 /* ------------------ */
 footer {
