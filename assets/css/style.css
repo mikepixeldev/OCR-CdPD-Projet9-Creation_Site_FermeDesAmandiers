@@ -56,13 +56,15 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, sans-serif;
-    background-color: #F5F3E7;
     color: #333333;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
 
 h1,
@@ -134,12 +136,161 @@ main {
     padding: 0 1.6rem;
 }
 
+/* ------------------ */
+/* RESET GÉNÉRAL      */
+/* ------------------ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Neutralisation UA via :where (spécificité 0) */
+:where(h1, h2, h3, h4, h5, h6) {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+:where(p, figure, blockquote, dl, dd) {
+    margin: 0;
+}
+
+:where(ul, ol) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+:where(a) {
+    text-decoration: none;
+    color: inherit;
+}
+
+:where(button, input, select, textarea) {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+}
+
+:where(img, svg, video, canvas, iframe) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------ */
+/* GLOBAL STYLES      */
+/* ------------------ */
+html {
+    /* Base 10 pour les rem */
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+    color: #6C8C55;
+    margin-bottom: 0.8rem;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 1.6rem;
+    line-height: 1.6;
+}
+
+a {
+    transition: color .2s ease;
+}
+
+a:hover {
+    color: #6C8C55;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.8rem;
+}
+
+/* ------------------ */
+/* LAYOUT SECTIONS    */
+/* ------------------ */
+
+header,
+footer,
+section {
+    padding: 3.2rem 0;
+    margin: auto;
+}
+
+header,
+main {
+    padding: 0 1.6rem;
+}
+
+header,
+footer {
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6.4rem;
     flex: 1;
+    background-color: #F5F3E7;
 }
 
 /* ------------------ */
@@ -182,7 +333,9 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1200px;
     width: 100%;
+    margin: auto;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
     background-color: white;
@@ -199,13 +352,6 @@ header .site-title h1 {
     display: none;
 }
 
-@media (min-width:768px) {
-    #main-nav {
-        display: block;
-        margin-top: 1.6rem;
-    }
-}
-
 #main-nav a {
     display: inline-block;
     padding: .4rem .8rem;
@@ -213,7 +359,7 @@ header .site-title h1 {
 
 
 /* ------------------ */
-/* HERO             */
+/* HERO               */
 /* ------------------ */
 
 #hero {
@@ -246,23 +392,6 @@ header .site-title h1 {
     margin-bottom: 0;
     max-width: 80rem;
 }
-
-/* Responsive desktop */
-@media (min-width: 768px) {
-    #hero {
-        min-height: 50rem;
-        padding: 8rem 2rem;
-    }
-
-    #hero h1 {
-        font-size: 4.8rem;
-    }
-
-    #hero p {
-        font-size: 2rem;
-    }
-}
-
 
 /* ------------------ */
 /* PRESENTATION       */
@@ -389,8 +518,8 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 4rem 1.6rem;
-    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background-color: #6C8C55;
     color: #F5F3E7;
     gap: 3.2rem;
@@ -411,3 +540,83 @@ footer a {
 .infos-contact {
     margin-top: 0.8rem;
 }
+
+
+/* ------------------------------------------------------ */
+/* RESPONSIVE                                             */
+/* ------------------------------------------------------ */
+
+
+/* ------------------ */
+/* GLOBAL STYLES      */
+/* ------------------ */
+
+/* ------------------ */
+/* LAYOUT SECTIONS    */
+/* ------------------ */
+
+
+/* ------------------ */
+/* UTILITY CLASSES    */
+/* ------------------ */
+
+
+
+/* ------------------ */
+/* HEADER             */
+/* ------------------ */
+
+@media (min-width:768px) {
+    #main-nav {
+        display: block;
+    }
+}
+
+
+
+/* ------------------ */
+/* HERO               */
+/* ------------------ */
+
+
+@media (min-width: 768px) {
+    #hero {
+        padding: 6.4rem 0;
+    }
+
+    #hero h1 {
+        font-size: 4.8rem;
+    }
+
+    #hero p {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* ------------------ */
+/* PRESENTATION       */
+/* ------------------ */
+
+
+/* ------------------ */
+/* À PROPOS           */
+/* ------------------ */
+
+
+
+/* ------------------ */
+/* VALEURS            */
+/* ------------------ */
+
+
+
+/* ------------------ */
+/* FONCTIONNEMENT     */
+/* ------------------ */
+
+
+
+/* ------------------ */
+/* FOOTER             */
+/* ------------------ */
