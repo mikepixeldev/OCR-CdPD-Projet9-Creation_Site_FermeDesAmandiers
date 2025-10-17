@@ -105,13 +105,22 @@ include 'partials/header.php';
                     const joursProduit = produit.getAttribute('data-jour');
 
                     if (filtre === 'tous') {
-                        produit.classList.remove('hidden'); // On retire la classe pour afficher
+                        // Afficher : retirer toutes les classes de masquage
+                        produit.classList.remove('hidden', 'fade-out');
+
+                    } else if (joursProduit.includes(filtre)) {
+                        // Afficher : retirer toutes les classes de masquage
+                        produit.classList.remove('hidden', 'fade-out');
+
                     } else {
-                        if (joursProduit.includes(filtre)) {
-                            produit.classList.remove('hidden'); // Afficher
-                        } else {
-                            produit.classList.add('hidden'); // Masquer
-                        }
+                        // Masquer : animation en 2 temps
+                        // 1️⃣ Fade-out avec transition CSS
+                        produit.classList.add('fade-out');
+
+                        // 2️⃣ Suppression de l'espace après la transition
+                        setTimeout(() => {
+                            produit.classList.add('hidden');
+                        }, 300); // Durée = transition CSS
                     }
                 });
             });

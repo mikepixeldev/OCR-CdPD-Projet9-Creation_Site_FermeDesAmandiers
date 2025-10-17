@@ -451,6 +451,7 @@ footer a {
     width: 100%;
 }
 
+/* État par défaut : visible */
 .produit-card {
     background-color: white;
     border-radius: 0.8rem;
@@ -460,26 +461,20 @@ footer a {
         0 .2rem .4rem rgba(0, 0, 0, .04);
     text-align: start;
 
-    /* Transition fluide sur l'opacité et la transformation */
+    /* Transition fluide */
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* État masqué : invisible + légèrement rétréci */
-.produit-card.hidden {
+/* Phase 1 : devient invisible avec transition */
+.produit-card.fade-out {
     opacity: 0;
     transform: scale(0.95);
     pointer-events: none;
-
-    /* 🔥 On cache complètement après la transition */
-    /* Mais on attend la fin de la transition (0.3s) */
-    transition: opacity 0.3s ease, transform 0.3s ease,
-        display 0s 0.3s;
-    /* display: none après 0.3s */
 }
 
-/* Force la suppression de l'espace */
+/* Phase 2 : supprime l'espace (appliqué après la transition via JS) */
 .produit-card.hidden {
     display: none;
 }
