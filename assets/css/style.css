@@ -62,9 +62,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1200px;
     width: 100%;
-    margin: auto;
+    margin: 0;
 }
 
 h1,
@@ -132,18 +131,9 @@ section {
 }
 
 header,
-main {
-    padding: 0 1.6rem;
-}
-
-header,
 footer {
-    max-width: none;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    width: 100%;
+    padding: 0;
 }
 
 main {
@@ -153,6 +143,14 @@ main {
     gap: 6.4rem;
     flex: 1;
     background-color: #F5F3E7;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
 }
 
 /* ------------------ */
@@ -191,17 +189,19 @@ main {
 /* HEADER             */
 /* ------------------ */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
     background-color: white;
 }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 
 /* Titre du site */
 header .site-title h1 {
@@ -225,10 +225,7 @@ header .site-title h1 {
 /* ------------------ */
 
 #hero {
-    max-width: none;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    width: 100%;
     padding: 6.4rem 1.6rem;
     background:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -250,9 +247,16 @@ header .site-title h1 {
 #hero p {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     font-size: 1.8rem;
-    margin-top: 1.6rem;
     margin-bottom: 0;
     max-width: 80rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 0;
 }
 
 /* ------------------ */
@@ -271,18 +275,16 @@ header .site-title h1 {
 /* ------------------ */
 
 #a-propos {
+    background-color: #F8F9F4;
+    width: 100%;
+    padding-top: 6.4rem;
+}
+
+.a-propos-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    background-color: #F8F9F4;
-    max-width: none;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    padding-top: 6.4rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
 }
 
 .sr-only {
@@ -300,7 +302,7 @@ header .site-title h1 {
 /* VALEURS            */
 /* ------------------ */
 
-#valeurs {
+.values-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,16 +338,16 @@ header .site-title h1 {
 /* ------------------ */
 
 #fonctionnement {
+    background-color: #F8F9F4;
+    width: 100%;
+    padding: 6.4rem 1.6rem;
+}
+
+.process-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    background-color: #F8F9F4;
-    max-width: none;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    padding: 6.4rem 1.6rem;
 }
 
 .process-grid {
@@ -375,22 +377,25 @@ header .site-title h1 {
 /* FOOTER             */
 /* ------------------ */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #6C8C55;
     color: #F5F3E7;
-    gap: 3.2rem;
 }
 
 footer p,
 footer a {
     margin: 0;
     font-size: 1.4rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3.2rem;
 }
 
 .infos-footer {

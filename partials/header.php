@@ -45,18 +45,20 @@
 
 <body>
     <header>
+        <div class="container header-container">
 
-        <!-- Logo / Titre du site -->
-        <div class="site-title">
-            <a href="index.php">
-                <h1>Ferme des Amandiers</h1>
-            </a>
+            <!-- Logo / Titre du site -->
+            <div class="site-title">
+                <a href="index.php">
+                    <h1>Ferme des Amandiers</h1>
+                </a>
+            </div>
+
+            <!-- Navigation principale -->
+            <nav id="main-nav">
+                <a href="index.php">Accueil</a>
+                <a href="produits.php">Produits</a>
+            </nav>
+
         </div>
-
-        <!-- Navigation principale -->
-        <nav id="main-nav">
-            <a href="index.php">Accueil</a>
-            <a href="produits.php">Produits</a>
-        </nav>
-
     </header>
