@@ -23,8 +23,8 @@ include('partials/header.php');
 
     <!-- Section Présentation de la ferme -->
     <section id="presentation">
-        <div class="container">
-            <div>
+        <div class="container presentation-content">
+            <div class="presentation-text">
                 <h2>Bienvenue à la Ferme des Amandiers</h2>
                 <p>Installée depuis 2015, Sandrine cultive avec passion une grande variété de légumes de saison en agriculture raisonnée. Chaque semaine, elle propose ses récoltes fraîches à la vente directe, en drive à la ferme, chaque mercredi et samedi.</p>
                 <p>Le site vous permet désormais de consulter les paniers disponibles avant de vous déplacer, et de découvrir l'univers de la ferme : ses méthodes de culture, ses valeurs, et les engagements de Sandrine pour une alimentation plus saine et locale.</p>
