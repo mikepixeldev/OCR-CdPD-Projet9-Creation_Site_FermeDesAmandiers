@@ -94,24 +94,26 @@ include 'partials/header.php';
 
     <!-- Il faut ajouter ici un script JS pour activer le filtrage dynamique -->
     <script>
+        // Script de filtrage des produits par jour
         const boutonsFiltre = document.querySelectorAll('[data-filtre]');
         const produits = document.querySelectorAll('.produit-card');
 
+        // Boucle sur les boutons de filtrage
         boutonsFiltre.forEach(bouton => {
             bouton.addEventListener('click', () => {
                 const filtre = bouton.getAttribute('data-filtre');
-
+                // Boucle sur les produits pour les afficher ou masquer selon le filtre
                 produits.forEach(produit => {
                     const joursProduit = produit.getAttribute('data-jour');
-
+                    // Vérification du filtre
                     if (filtre === 'tous') {
                         // Afficher : retirer toutes les classes de masquage
                         produit.classList.remove('hidden', 'fade-out');
-
+                        // Sinon, vérifier si le produit correspond au jour filtré
                     } else if (joursProduit.includes(filtre)) {
                         // Afficher : retirer toutes les classes de masquage
                         produit.classList.remove('hidden', 'fade-out');
-
+                        // Sinon, masquer le produit
                     } else {
                         // Masquer : animation en 2 temps
                         // 1️⃣ Fade-out avec transition CSS
