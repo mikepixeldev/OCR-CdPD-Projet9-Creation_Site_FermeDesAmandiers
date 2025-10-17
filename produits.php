@@ -94,7 +94,28 @@ include 'partials/header.php';
 
     <!-- Il faut ajouter ici un script JS pour activer le filtrage dynamique -->
     <script>
+        const boutonsFiltre = document.querySelectorAll('[data-filtre]');
+        const produits = document.querySelectorAll('.produit-card');
 
+        boutonsFiltre.forEach(bouton => {
+            bouton.addEventListener('click', () => {
+                const filtre = bouton.getAttribute('data-filtre');
+
+                produits.forEach(produit => {
+                    const joursProduit = produit.getAttribute('data-jour');
+
+                    if (filtre === 'tous') {
+                        produit.classList.remove('hidden'); // On retire la classe pour afficher
+                    } else {
+                        if (joursProduit.includes(filtre)) {
+                            produit.classList.remove('hidden'); // Afficher
+                        } else {
+                            produit.classList.add('hidden'); // Masquer
+                        }
+                    }
+                });
+            });
+        });
     </script>
 </main>
 
