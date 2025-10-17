@@ -47,10 +47,8 @@ $stmt->execute();
 // On utilise fetchAll pour récupérer tous les produits de la saison courante
 $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-?>
 
-<!-- Inclusion du header -->
-<?php
+// Inclusion du header
 $title = "Nos produits de saison – Ferme des Amandiers";
 $metaDescription = "Consultez les paniers disponibles selon la saison et les jours de retrait (mercredi et samedi).";
 include 'partials/header.php';

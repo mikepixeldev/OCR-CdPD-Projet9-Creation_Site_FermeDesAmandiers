@@ -465,6 +465,10 @@ footer a {
 .produit-card img {
     margin-bottom: 1.6rem;
     border-radius: 0.4rem;
+    max-height: 16rem;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 .produit-card h2 {
@@ -492,10 +496,9 @@ footer a {
 /* ------------------ */
 
 @media (min-width: 1200px) {
-
     .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: max(1.33%, 16px);
+        padding-right: max(1.33%, 16px);
     }
 }
 
@@ -630,5 +633,35 @@ footer a {
         width: 1px;
         height: 8rem;
         background-color: #F5F3E7;
+    }
+}
+
+/* ------------------ */
+/* PRODUITS           */
+/* ------------------ */
+
+@media (min-width: 640px) {
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .products-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .produit-card img {
+        height: 16rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .products-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
