@@ -277,7 +277,6 @@ header .site-title h1 {
 .presentation-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1.6rem;
 }
 
@@ -359,6 +358,7 @@ header .site-title h1 {
     flex-direction: column;
     align-items: center;
     gap: 4rem;
+    padding: 0;
 }
 
 .process-grid {
@@ -388,6 +388,11 @@ header .site-title h1 {
 /* FOOTER             */
 /* ------------------ */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #6C8C55;
@@ -419,6 +424,9 @@ footer a {
     margin-top: 0.8rem;
 }
 
+.barre-footer {
+    display: none;
+}
 
 /* ------------------------------------------------------ */
 /* RESPONSIVE                                             */
@@ -433,6 +441,13 @@ footer a {
 /* LAYOUT SECTIONS    */
 /* ------------------ */
 
+@media (min-width: 1200px) {
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 /* ------------------ */
 /* UTILITY CLASSES    */
@@ -460,6 +475,7 @@ footer a {
 @media (min-width: 768px) {
     #hero {
         padding: 6.4rem 0;
+        min-height: 22rem;
     }
 
     #hero h1 {
@@ -476,25 +492,93 @@ footer a {
 /* PRESENTATION       */
 /* ------------------ */
 
+@media (min-width: 768px) {
+
+    #presentation {
+        padding: 0;
+    }
+
+
+    .presentation-content {
+        flex-direction: row;
+    }
+}
 
 /* ------------------ */
 /* À PROPOS           */
 /* ------------------ */
 
+@media (min-width: 768px) {
+    #a-propos {
+        padding-bottom: 6.4rem;
+    }
 
+    .a-propos-content {
+        flex-direction: row;
+    }
+}
 
 /* ------------------ */
 /* VALEURS            */
 /* ------------------ */
 
+@media (min-width: 768px) {
 
+    #valeurs {
+        padding: 0;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 /* ------------------ */
 /* FONCTIONNEMENT     */
 /* ------------------ */
 
+@media (min-width: 768px) {
 
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 /* ------------------ */
 /* FOOTER             */
 /* ------------------ */
+
+@media (min-width: 768px) {
+
+    footer {
+        gap: 3.2rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3.2rem;
+    }
+
+    .footer-contact {
+        text-align: end;
+    }
+
+    .infos-legal {
+        text-align: start;
+    }
+
+    .barre-footer {
+        display: block;
+        width: 1px;
+        height: 8rem;
+        background-color: #F5F3E7;
+    }
+}

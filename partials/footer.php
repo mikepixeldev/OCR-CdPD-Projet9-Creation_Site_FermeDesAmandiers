@@ -13,19 +13,21 @@
               </div>
           </div>
 
+          <div class="barre-footer"></div>
+
           <!-- Liens légaux -->
-          <nav class="infos-footer">
+          <nav class="infos-footer infos-legal">
               <a href="#mentions-legales">Mentions légales</a>
               <a href="#politique-confidentialite">Politique de confidentialité</a>
               <a href="#cgv">Conditions générales de vente</a>
               <a href="#cookies">Gestion des cookies</a>
           </nav>
 
-          <!-- Copyright -->
-          <div class="footer-legal">
-              <p>&copy; <?= date('Y') ?> Ferme des Amandiers - Tous droits réservés</p>
-          </div>
+      </div>
 
+      <!-- Copyright -->
+      <div class="footer-legal">
+          <p>&copy; <?= date('Y') ?> Ferme des Amandiers - Tous droits réservés</p>
       </div>
   </footer>
   </body>
