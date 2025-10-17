@@ -58,13 +58,15 @@ include 'partials/header.php';
 
 <main>
     <!-- Titre principal -->
-    <section>
-        <h1>Nos produits de saison</h1>
-        <p>Voici les produits disponibles cette semaine à la vente directe.</p>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Nos produits de saison</h1>
+            <p>Voici les produits disponibles cette semaine à la vente directe.</p>
+        </div>
     </section>
 
     <!-- Boutons de filtrage (à rendre fonctionnels en JavaScript) -->
-    <section>
+    <section class="filtre-produits">
         <button data-filtre="tous">Tous</button>
         <button data-filtre="mercredi">Mercredi</button>
         <button data-filtre="samedi">Samedi</button>
@@ -72,7 +74,7 @@ include 'partials/header.php';
     </section>
 
     <!-- Liste des produits -->
-    <section>
+    <section class="products-grid">
         <!-- Chaque produit est affiché dans une <div> avec un attribut data-jour -->
         <?php foreach ($produits as $produit): ?>
             <?php
@@ -82,7 +84,7 @@ include 'partials/header.php';
             // On affiche chaque produit avec ses informations : nom, description, image, saison et jours de disponibilité 
             // Il faudra ensuite filtrer les produits en fonction des saisons, pour n'afficher que ceux de la saison actuelle
             ?>
-            <div class="produit" data-jour="<?= $joursClasses ?>">
+            <div class="produit-card" data-jour="<?= $joursClasses ?>">
                 <img src="<?= $produit['image_url'] ?>" alt="<?= htmlspecialchars($produit['nom']) ?>">
                 <h2><?= htmlspecialchars($produit['nom']) ?></h2>
                 <p><?= htmlspecialchars($produit['description']) ?></p>

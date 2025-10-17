@@ -140,10 +140,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6.4rem;
     flex: 1;
     background-color: #F5F3E7;
     width: 100%;
+}
+
+#main-home {
+    gap: 6.4rem;
 }
 
 .container {
@@ -156,17 +159,9 @@ main {
 /* ------------------ */
 /* UTILITY CLASSES    */
 /* ------------------ */
-.text-center {
-    text-align: center;
-}
 
-.bg-light {
-    background-color: #f0f0f0;
-}
-
-.btn {
+button {
     display: inline-block;
-    padding: 1.2rem 2.4rem;
     background-color: #6C8C55;
     color: white;
     border: none;
@@ -175,14 +170,9 @@ main {
     transition: background-color .25s ease, transform .15s ease;
 }
 
-.btn:hover {
+.button:hover {
     background-color: #5A7548;
     transform: translateY(-2px);
-}
-
-.bg-accent {
-    background-color: #6C8C55;
-    color: white;
 }
 
 /* ------------------ */
@@ -201,8 +191,6 @@ header {
     flex-wrap: wrap;
 }
 
-
-
 /* Titre du site */
 header .site-title h1 {
     font-size: 2rem;
@@ -219,12 +207,11 @@ header .site-title h1 {
     padding: .4rem .8rem;
 }
 
-
 /* ------------------ */
 /* HERO               */
 /* ------------------ */
 
-#hero {
+.hero {
     width: 100%;
     padding: 6.4rem 1.6rem;
     background:
@@ -238,13 +225,13 @@ header .site-title h1 {
     align-items: center;
 }
 
-#hero h1 {
+.hero h1 {
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
-#hero p {
+.hero p {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     font-size: 1.8rem;
     margin: 0;
@@ -353,6 +340,10 @@ header .site-title h1 {
     padding: 6.4rem 1.6rem;
 }
 
+#fonctionnement button {
+    padding: 1.2rem 2.4rem;
+}
+
 .process-content {
     display: flex;
     flex-direction: column;
@@ -429,6 +420,65 @@ footer a {
 }
 
 /* ------------------------------------------------------ */
+/* PAGE PRODUITS                                          */
+/* ------------------------------------------------------ */
+
+
+/* ------------------ */
+/* FILTRES            */
+/* ------------------ */
+
+.filtre-produits {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 2.4rem 0;
+}
+
+.filtre-produits button {
+    padding: 0.8rem 1.6rem;
+}
+
+/* ------------------ */
+/* PRODUITS           */
+/* ------------------ */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.4rem;
+    padding: 3.2rem 1.6rem;
+}
+
+.produit-card {
+    background-color: white;
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    box-shadow:
+        0 .6rem 1.6rem rgba(0, 0, 0, .08),
+        /* soft spread */
+        0 .2rem .4rem rgba(0, 0, 0, .04);
+    /* contact shadow */
+    text-align: start;
+}
+
+.produit-card img {
+    margin-bottom: 1.6rem;
+    border-radius: 0.4rem;
+}
+
+.produit-card h2 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.produit-card p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+
+/* ------------------------------------------------------ */
 /* RESPONSIVE                                             */
 /* ------------------------------------------------------ */
 
@@ -473,16 +523,16 @@ footer a {
 
 
 @media (min-width: 768px) {
-    #hero {
+    .hero {
         padding: 6.4rem 0;
         min-height: 22rem;
     }
 
-    #hero h1 {
+    .hero h1 {
         font-size: 4.8rem;
     }
 
-    #hero p {
+    .hero p {
         font-size: 1.8rem;
     }
 }

@@ -10,9 +10,9 @@ $preloadImage = "assets/img/hero-header.jpg";
 include('partials/header.php');
 ?>
 
-<main>
+<main id="main-home">
     <!-- Section Hero / Accroche principale -->
-    <section id="hero">
+    <section class="hero">
         <div class="container hero-content">
 
             <h1>Des légumes frais, locaux et de saison</h1>
@@ -99,9 +99,9 @@ include('partials/header.php');
                     <p>Savourez des légumes cultivés avec soin, à deux pas de chez vous.</p>
                 </li>
             </ol>
-            <p>
+            <button>
                 <a class="btn" href="produits.php">Voir les produits</a>
-            </p>
+            </button>
 
         </div>
     </section>
